@@ -17,7 +17,7 @@ const generateARandomJoke = ()=>{
     ).then(response => response.json())
     .then(data =>{
         console.log(data);
-        joke.innerHTML = data[0].fact
+        joke.innerHTML = data[0].joke
     })
     .catch(error =>{
         console.log(error)
